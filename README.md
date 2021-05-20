@@ -167,6 +167,6 @@ export default App;
 
 The application should still be running on `http://localhost:3000/` and your app should looking something like:
 
-![Chapter-01-Screen](./Chapter-01-first-screen.png)
+![Chapter-01-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-01/public/Chapter-01-first-screen.png)
 
 If this is the case, you’re ready to move on to the next chapter! :tada:
