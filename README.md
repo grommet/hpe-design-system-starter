@@ -21,4 +21,4 @@ However, if you’d like to start completely from scratch, you can run:
 $ npx create-react-app hpe-design-system-starter
 ```
 ## Table of Contents
-1.  [Setup your application with Grommet and grommet-theme-hpe]()
+1.  [Setup your application with Grommet and grommet-theme-hpe](https://github.com/grommet/hpe-design-system-starter/tree/chapter-01)
