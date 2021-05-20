@@ -5,26 +5,43 @@
 At the end of this chapter, you will:
 
 1. Understand the basics of `Box` and how it is used.
-2. Understand how to use `Header` component and what the different 
-options we have in the design-system.
-3. Understand how to use `Footer` component.
-4. At the end of this you should have a Header, Footer and Main in our application.
+2. Understand the importance of layout specific DOM tags such as `<header>`, `<main>`, and `<footer>`
+3. Understand how to use `Header`, `Main`, and `Footer` components.
+6. Have the scaffolding of your app layout built, which will include a Header, Main, and Footer.
 
 ## Fundamentals
 
-We will be using 3 main Components from Grommet. All of these componets are made from `Box`. We will start with the fundamentals that come with using `Box. 
+Before we get into the specific layout components, we will start with understanding one of Grommet's most fundamental components: `Box`.
 
 ### Box
 
-[Box](https://v2.grommet.io/box?theme=hpe#props) is where it all starts. Flexible props allow the behavior of content to be defined to optimize the user experience. Box was built on the idea of `flex-box`. We will use `Box` as our container within `Grommet` that will hold the rest of our content. If you have worked with `flex-box` many of the props will be familiar. 
+[Box](https://v2.grommet.io/box?theme=hpe#props) is where it all starts. Think of Box as a container that you fill with content, leveraging Box properties to instruct how the content will be laid out. Grommet Box component is built on top of [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This means that any CSS Flexbox attributes such as `flex-direction` have a corresponding Box prop such as `direction`.
+
+You may notice that Grommet has simplified the naming of these properties and their respective values (as is seen with `flex-direction` --> `direction`), but all Flexbox flexibility is possible.
+
+If you're brand new to Grommet or CSS Flexbox, you may enjoy this [interactive Flexbox Froggy game](https://flexboxfroggy.com/) which can help familiarize you with how the various properties affect the content layout.
+
+Now that you're more familiar with Box, let's get into some of the more layout-specific components.
 
 ### Header
 
-Header is made from `Box` it comes with some pre set props to help make it easier to use. In the [Design-System](https://design-system.hpe.design/components/header) you will find different versions of header. Later on in our tutorial we will pick one and reference the code provided to use in our application. 
+Header is a `Box` with some predefined props to help make it easier to use, including an `as="header"` prop which ensures it appears as `<header>` in the DOM. In the [Design System](https://design-system.hpe.design/components/header) you will find different examples of Header populated with various kinds of content. We will be using one of these examples in our application. 
+
+### Main
+
+Main is also a `Box` with predefined props, including an `as="main"` prop which ensures it appears as `<main>` in the DOM.
 
 ### Footer
 
-Footer is the same as `Header` in the fact that it is built from `Box` with preset props. We will be using [Design-System](https://design-system.hpe.design/components/footer) to also help us build out our footer. 
+Footer is also a `Box` with predefined props, including an `as="footer"` prop which ensures it appears as `<footer>` in the DOM. We will be using a [Design System Footer](https://design-system.hpe.design/components/footer) to help us build our application footer. 
+
+### Why is it important to use Header, Main, and Footer components as opposed to just Box?
+
+You should use these layout-specific components to ensure that they appear as `<header>`, `<main>`, and `<footer>` in the DOM. This allows screen readers and other assistive technologies to properly interpret the application's content structure. The HPE Design System holds [accessibility](https://design-system.hpe.design/foundation/accessibility) as a core principle because we want all users to have enjoyable experiences using our applications.
+
+If for whatever reason you are not interested in using the layout-specific components and would rather just use Box, make sure you add the appropriate `as` prop so that the Box appears as either a `<header>`, `<main>`, or `<footer>` in the DOM.
+
+Throughout this guide, we will be referencing guidance from WCAG (Web Content Accessibility Guidelines) which is a robust set of accessibility design guidelines for software and web-based products. If you'd like to read more about page regions, you can do so on the [WCAG Page Regions documentation](https://www.w3.org/WAI/tutorials/page-structure/regions/).
 
 ## Let’s get started with the application setup!
 
