@@ -1,5 +1,5 @@
 # HPE Design System Starter
-This step-by-step guide and starter application will show you how to develop enterprise applications using the HPE Design System. It is divided into chapters, where each chapter will focus on one objective and demonstrate how to select which components or patterns should be used and how to implement them. The code for each chapter will live on a separate branch that you can access in the Table of Contents below.
+This step-by-step guide and starter application will show you how to develop enterprise applications using the HPE Design System. It is divided into chapters, where each chapter will focus on one objective and demonstrate how to select which components or patterns should be used and how to implement them. The code for each chapter will live on a separate branch that you can access in the [Table of Contents](https://github.com/grommet/hpe-design-system-starter/tree/master#table-of-contents) below.
 We recommend you follow the guide from start to finish, but you can also jump to a specific chapter if you have a certain topic of interest.
 
 ## Objectives
