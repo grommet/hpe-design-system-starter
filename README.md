@@ -22,7 +22,7 @@ We will be using 3 main Components from Grommet. All of these componets are made
 
 Header is made from `Box` it comes with some pre set props to help make it easier to use. In the [Design-System](https://design-system.hpe.design/components/header) you will find different versions of header. Later on in our tutorial we will pick one and reference the code provided to use in our application. 
 
-### Footer ?
+### Footer
 
 Footer is the same as `Header` in the fact that it is built from `Box` with preset props. We will be using [Design-System](https://design-system.hpe.design/components/footer) to also help us build out our footer. 
 
@@ -36,7 +36,7 @@ If you can recall from our last chapter you should have left off with the follow
 ```
 const App = () => {
   return (
-+    <Grommet theme={hpe} style={{ height: ’100%’, width: ‘auto’ }} full>
+    <Grommet theme={hpe} style={{ height: ’100%’, width: ‘auto’ }} full>
         Hello, World!
     </Grommet>
   );
@@ -44,16 +44,7 @@ const App = () => {
 export default App;
 
 ```
-### Let’s import Header
-
-Lets start by adding Header to our `imports` at the top from `grommet. Your top of the code should look like the following:
-For best practices we can put the `Header` after `Grommet` to keep things alphabetized. 
-
-```
-import React from ‘react’;
-import { Grommet, Header } from ‘grommet’;
-
-```
+### Let’s explore Header
 
 Now, we can look at our [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons) to grab a header. Later in our tutorial we are going to address routing so having a header with navigation is what we want for this application. When you go to the link you can see the example as well as a __Show Code__ option under the example. In there we have the following:
 
@@ -179,7 +170,7 @@ The file should now look like the above code in `App.js`
 
 The application should still be running on `http://localhost:3000/` and your app should looking something like:
 
-![Chapter-01-Screen](./Chapter-02-first-screen.png)
+![Chapter-02-first-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-first-screen.png)
 
 Definity not the prettiest screen but dont worry we are making great progress! :smiley:
 
@@ -299,6 +290,7 @@ This main component will also have to match the pad of the `Header` and `Footer`
 
 Lets do a quick sanity check and look at our application you should have something like this.
 
-![Chapter-01-Screen](./Chapter-02-second-screen.png)
+![Chapter-02-Second-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-second-screen.png)
+
 
 If this is the case, you’re ready to move on to the next chapter! :tada:
