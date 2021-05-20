@@ -8,8 +8,8 @@ By the end of this tutorial, you should feel confident about:
 2. Incorporating accessibility-specific porperties to components
 3. Making decisions regarding when to use one component versus another
 4. Creating responsive layouts that are pleasing to use on both desktop and mobile
-5. Go through the ins and outs of using the Design System
-6. Show best practices within our steps along the way
+5. Understanding the ins and outs of using the Design System
+6. Implementing best practices based on guidance in the steps along the way
 
 ## Setup
 For the purposes of this tutorial, we will be using Create React App. However, the HPE Design System is equally compatible with other options such as NextJS or Gatsby.
