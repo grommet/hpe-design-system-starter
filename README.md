@@ -22,7 +22,7 @@ We will be using 3 main Components from Grommet. All of these componets are made
 
 Header is made from `Box` it comes with some pre set props to help make it easier to use. In the [Design-System](https://design-system.hpe.design/components/header) you will find different versions of header. Later on in our tutorial we will pick one and reference the code provided to use in our application. 
 
-### Footer ?
+### Footer
 
 Footer is the same as `Header` in the fact that it is built from `Box` with preset props. We will be using [Design-System](https://design-system.hpe.design/components/footer) to also help us build out our footer. 
 
