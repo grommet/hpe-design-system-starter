@@ -44,16 +44,7 @@ const App = () => {
 export default App;
 
 ```
-### Let’s import Header
-
-Lets start by adding Header to our `imports` at the top from `grommet. Your top of the code should look like the following:
-For best practices we can put the `Header` after `Grommet` to keep things alphabetized. 
-
-```
-import React from ‘react’;
-import { Grommet, Header } from ‘grommet’;
-
-```
+### Let’s explore Header
 
 Now, we can look at our [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons) to grab a header. Later in our tutorial we are going to address routing so having a header with navigation is what we want for this application. When you go to the link you can see the example as well as a __Show Code__ option under the example. In there we have the following:
 
