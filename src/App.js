@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Grommet, Box, Main } from "grommet";
+import { hpe } from "grommet-theme-hpe";
+import { HeaderNavigation } from "./components/header";
+import { FooterExample } from "./components/footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Grommet theme={hpe} style={{ minHeight: "100%", width: "auto" }} full>
+        <HeaderNavigation />
+        <Main
+          pad={{ horizontal: "medium", vertical: "small" }}
+          flex
+          fill={false}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          {" "}
+          Hello, World!
+        </Main>
+        <FooterExample />
+    </Grommet>
   );
-}
-
+};
 export default App;
