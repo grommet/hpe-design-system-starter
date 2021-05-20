@@ -170,7 +170,7 @@ The file should now look like the above code in `App.js`
 
 The application should still be running on `http://localhost:3000/` and your app should looking something like:
 
-![Chapter-01-Screen](./Chapter-02-first-screen.png)
+![Chapter-02-first-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-first-screen.png)
 
 Definity not the prettiest screen but dont worry we are making great progress! :smiley:
 
@@ -290,6 +290,7 @@ This main component will also have to match the pad of the `Header` and `Footer`
 
 Lets do a quick sanity check and look at our application you should have something like this.
 
-![Chapter-01-Screen](./Chapter-02-second-screen.png)
+![Chapter-02-Second-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-second-screen.png)
+
 
 If this is the case, you’re ready to move on to the next chapter! :tada:
