@@ -36,7 +36,7 @@ If you can recall from our last chapter you should have left off with the follow
 ```
 const App = () => {
   return (
-+    <Grommet theme={hpe} style={{ height: ’100%’, width: ‘auto’ }} full>
+    <Grommet theme={hpe} style={{ height: ’100%’, width: ‘auto’ }} full>
         Hello, World!
     </Grommet>
   );
