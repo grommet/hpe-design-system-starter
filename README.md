@@ -172,6 +172,8 @@ full: '100%',
 <Box width="small" height="medium" /> 
 // width = 192px, height = 384px
 ```
+![Box t-shirt sizing](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/box-sizing.png)
+
 ### 3. React Context, useContext, and ResponsiveContext
 
 Creating experiences that are enjoyable on a range of screen sizes is critical to application development. In order to make this process easier, Grommet has a context called `ResponsiveContext` that provides a way to differ your application's rendering behavior based on the screen resolution.
