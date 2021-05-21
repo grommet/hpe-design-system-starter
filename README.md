@@ -19,7 +19,7 @@ Before we get into the specific layout components, we will start with understand
 
 [Box](https://v2.grommet.io/box?theme=hpe#props) is where it all starts. Think of Box as a container that you fill with content, leveraging Box properties to instruct how the content will be laid out. Grommet Box component is built on top of [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This means that any CSS Flexbox attributes such as `flex-direction` have a corresponding Box prop such as `direction`.
 
-You may notice that Grommet has simplified the naming of these properties and their respective values (as is seen with `flex-direction` --> `direction`), but all Flexbox flexibility is possible.
+You may notice that Grommet has simplified the naming of these properties and their respective values (as is seen with `flex-direction` / `direction`), but all Flexbox flexibility is possible.
 
 If you're brand new to Grommet or CSS Flexbox, you may enjoy this [interactive Flexbox Froggy game](https://flexboxfroggy.com/) which can help familiarize you with how the various properties affect the content layout.
 
