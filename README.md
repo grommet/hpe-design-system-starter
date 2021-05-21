@@ -205,15 +205,29 @@ This says, "If the screen size is not small, render the entire Nav. Otherwise, i
 
 ### Menu 
 
-In our small size we are using a `Menu`. `Menu` contains a list of actions. In our application our list of actions will be the different routes.  
-When a user clicks on the `Menu` in our case the different routes will open in a drop down and then the user can navigate to other pages. There are a few guidelines that we recommend when using [Menu](https://design-system.hpe.design/components/menu#guidance). In our example we are using a few `Menu` props. 
+When the user is on mobile, there will likely not be enough screen width to show all navigation items in a row like we do on desktop. Therefore, we want to adjust the rendering of our application on mobile to create a clean experience for the user. In this case, we will condense all the navigation items under a single Menu. 
 
- 1. The `label` prop is what the user sees before they open the dropdown. 
- 2. Above we have a list of `items` now these items represent the different links so we are passing in `items={items}`
+Menu should be used when the user needs to perform an action from a list of actions. In this case, that action will be navigation to different routes of the app.
 
-### HPE Logo
+When a user clicks on the `Menu`, the different routes will open in a dropdown. Upon clicking an option, the user will be navigated to that route associated with that option. 
 
-Lucky for us we dont need to do anything special in order to have our Hpe logo at the left side of our `Header` all we do is `import { Hpe } from 'grommet-icons';` Then you can place `<Hpe color="brand" >` in our code.
+In our example we are using a few `Menu` props that we'll talk about below. However, if you'd like to read more about [Menu guidance](https://design-system.hpe.design/components/menu#guidance), you can do so on the Design System site.
+
+ 1. The `label` prop is the text the user sees in the Menu button. 
+ 2. The `items` is an array of objects of what should appear in the Menu dropdown. The object values can be any Button properties. For now, we have set items to the following, but we will be adding other properties in the future once we incorporate the routing:
+ ```
+  [
+  { label: 'Label 1' },
+  { label: 'Label 2' },
+  { label: 'Label 3' },
+];
+```
+
+### HPE Element
+
+When you're using icons in your application, you should be able to find them in [Grommet Icons](https://icons.grommet.io//). Icons take `size` and `color` properties to adjust how they look. More often than not, you will be able to use the default size and color. 
+
+For our case, we need the `Hpe` icon. All we do is `import { Hpe } from 'grommet-icons';`. Then you can place `<Hpe color="brand" >` in our code.
 
 ## Best Practices 
 You may think we can just go ahead and stick this code above our `Hello World`. We can and it would work just fine however we want our code to be organized and clean. Lets start by creating a folder in our `src` folder. This folder will be called `components` Within the `components` folder we can create a file that we can name `header.js`. In here we will copy and paste the code from the [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons).
