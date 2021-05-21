@@ -1,11 +1,13 @@
 # Pre-Chapter: We can think of this as a sanity check to make sure we have everything we need in order to be successful with going through this application. 
 
+
 ## Objective
 At the end of this pre-chapter, you will:
 
 1. System setup, we will go through everything you will need to start using HPE Design System
 2. Basic understanding of HTML and CSS.
 3. JavaScript fundamentals (including ES6 features)
+4. React
 
 
 ### System Setup
@@ -52,3 +54,7 @@ I would recomment that you are familar with the basics of these 3 to get started
 ### JavaScript 
 
 JavaScript is the programming language that will add interactivity to your elements on your website. There is a ton of tutorials online that will go further in detail about the fundamentals with JavaScript. I would also recommend looking into the [ES6 features](https://www.w3schools.com/js/js_es6.asp). 
+
+### What is React
+
+React is an open source JavaScript library. Grommet, which is explained more in the next chapter, is built using React. While having past experience with React is not necessary to developing with the HPE Design System, gaining some familiarity with the library will make the learning curve easier. If React is new to you, we would recommend taking a look at some of the [React documentation](https://reactjs.org/docs/getting-started.html).
