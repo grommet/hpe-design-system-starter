@@ -13,7 +13,7 @@ At the end of this chapter, you will:
 React, Grommet, grommet-theme-hpe, and an undestanding of their respective roles in the HPE Design System ecosystem are fundamental to confidently and successfully building this starter application. Below, we’ll cover what each of these is and how they all work together to create the HPE Design System development experience.
 
 ### Tools for React 
-React is an open source JavaScript library, with that being if you are new to JavaScript I would recommend that you go through some of their resources. I would advise users to go through this quick [intro to Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to get familiar this will help with learning React. 
+React is an open source JavaScript library. With that being said, if you are new to JavaScript we would recommend that you go through some of their resources. This quick [intro to Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) will help you to get familiar with some concepts that will be helpful in learning React. 
 
 ### Node js 
 
