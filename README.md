@@ -12,8 +12,17 @@ At the end of this chapter, you will:
 
 React, Grommet, grommet-theme-hpe, and an undestanding of their respective roles in the HPE Design System ecosystem are fundamental to confidently and successfully building this starter application. Below, we’ll cover what each of these is and how they all work together to create the HPE Design System development experience.
 
-### NPM or Yarn?
+### Tools for React 
+React is an open source JavaScript library, with that being if you are new to JavaScript I would recommend that you go through some of their resources. I would advise users to go through this quick [intro to Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to get familiar this will help with learning React. 
 
+### Node js 
+
+Nodejs is used for hosting as well as running a web server for a React application. For downloads you can look [here](https://nodejs.org/en/)
+ 
+
+### Package Manager (NPM or Yarn?)
+
+There are two main package managers that can be used. These are to easily instal and update other third-party packages. 
 You can use npm or [yarn](https://classic.yarnpkg.com/en/docs/getting-started) as your package manager. The HPE Design System uses `yarn`, but both will work.
 
 ### What is React ?
