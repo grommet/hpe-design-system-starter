@@ -45,13 +45,14 @@ Now that we have decided on a project manager as well as code editor we can move
 
 I would recommend going through some [basic knowledge](https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#basichtml) of HTML and CSS. 
 
-* HTML is what provides the basic structure of sites. 
-* CSS is used to control how the website should appear on the front end of the page. 
-* JavaScript is used to motify the content  of websites too behave a certain way. 
+* [HTML](https://www.w3schools.com/html/html_intro.asp) is what provides the basic structure of sites. 
+* [CSS](https://www.w3schools.com/css/default.asp) is used to control how the website should appear on the front end of the page. 
 
-I would recomment that you are familar with the basics of these 3 to get started with  React, this will make your life easier. 
+I would recomment that you are familar with the basics of these 3 to get started with  React, this will make your life easier. Above there are a few links that you can visit to learn more about each of these.
 
 ### JavaScript 
+
+* [JavaScript](https://www.w3schools.com/js/default.asp) is used to motify the content of websites too behave a certain way. 
 
 JavaScript is the programming language that will add interactivity to your elements on your website. Knowing the [basics in JavaScript](https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#basicjavascript) will help you understand the way React works. I would also recommend looking into the [ES6 features](https://www.w3schools.com/js/js_es6.asp). 
 
