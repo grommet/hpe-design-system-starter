@@ -205,6 +205,10 @@ In the case of the Header example shared above, you'll see:
 ```
 This says, "If the screen size is not small, render the entire Nav. Otherwise, if the screen size is small, just render the Menu."
 
+Here's an example of some responsive designs. Notice how the navigation regions shift for mobile and how the Dashboard becomes one column.
+
+![Responsive Design Example](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/responsive-design.png)
+
 ### Menu 
 
 When the user is on mobile, there will likely not be enough screen width to show all navigation items in a row like we do on desktop. Therefore, we want to adjust the rendering of our application on mobile to create a clean experience for the user. In this case, we will condense all the navigation items under a single Menu. 
