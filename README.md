@@ -22,3 +22,4 @@ $ npx create-react-app hpe-design-system-starter
 ```
 ## Table of Contents
 1.  [Setup your application with Grommet and grommet-theme-hpe](https://github.com/grommet/hpe-design-system-starter/tree/chapter-01)
+2.  [Setup a Header, Main and Footer!](https://github.com/grommet/hpe-design-system-starter/tree/chapter-02)
