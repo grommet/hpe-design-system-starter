@@ -7,6 +7,7 @@ import { FooterExample } from "./components/footer";
 const App = () => {
   return (
     <Grommet theme={hpe} style={{ minHeight: "100%", width: "auto" }} full>
+      <Box fill>
         <HeaderNavigation />
         <Main
           pad={{ horizontal: "medium", vertical: "small" }}
@@ -17,6 +18,7 @@ const App = () => {
           Hello, World!
         </Main>
         <FooterExample />
+      </Box>
     </Grommet>
   );
 };
