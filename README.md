@@ -12,6 +12,10 @@ At the end of this chapter, you will:
 
 React, Grommet, grommet-theme-hpe, and an undestanding of their respective roles in the HPE Design System ecosystem are fundamental to confidently and successfully building this starter application. Below, we’ll cover what each of these is and how they all work together to create the HPE Design System development experience.
 
+### Styled-Components 
+Grommet which we will cover in the section below, was built using React and Styled-Components. [Styled-Components](https://styled-components.com/) is a CSS in JavaScript library. Using Styled-Components allows you to skip the classNames you would normally use when adding CSS. Every style is applied  to a certain component which keeps things alot cleaner. You wont need to know how to use Styled-Components to use Grommet, however it is good to know what Grommet is built with!
+
+
 ### What is Grommet ?
 
 Grommet is a React-based component library that provides the components for the HPE Design System. The [Design System documentation site](https://design-system.hpe.design/components) provides specific guidance, best practices, and patterns that are recommended for implementing these components, while a comprehensive list of all available component properties can be found on the [Grommet site](https://v2.grommet.io/components?theme=hpe).
