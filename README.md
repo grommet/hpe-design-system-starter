@@ -43,7 +43,7 @@ an integrated terminal. Now there are plenty of other code editors that will wor
 
 Now that we have decided on a project manager as well as code editor we can move on to some code! 
 
-I would recommend going through some basic knowledge of HTML and CSS. 
+I would recommend going through some [basic knowledge](https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#basichtml) of HTML and CSS. 
 
 * HTML is what provides the basic structure of sites. 
 * CSS is used to control how the website should appear on the front end of the page. 
@@ -53,7 +53,7 @@ I would recomment that you are familar with the basics of these 3 to get started
 
 ### JavaScript 
 
-JavaScript is the programming language that will add interactivity to your elements on your website. There is a ton of tutorials online that will go further in detail about the fundamentals with JavaScript. I would also recommend looking into the [ES6 features](https://www.w3schools.com/js/js_es6.asp). 
+JavaScript is the programming language that will add interactivity to your elements on your website. Knowing the [basics in JavaScript](https://www.freecodecamp.org/news/getting-started-with-react-a-modern-project-based-guide-for-beginners-including-hooks-2/#basicjavascript) will help you understand the way React works. I would also recommend looking into the [ES6 features](https://www.w3schools.com/js/js_es6.asp). 
 
 ### What is React
 
