@@ -204,14 +204,19 @@ In the case of the Header example shared above, you'll see:
 This says, "If the screen size is not small, render the entire Nav. Otherwise, if the screen size is small, just render the Menu."
 
 ### Menu 
-We are using `Menu` in order to have a drop that will contain the `Button` routes when in mobile view. 
+
+In our small size we are using a `Menu`. `Menu` contains a list of actions. In our application our list of actions will be the different routes.  
+When a user clicks on the `Menu` in our case the different routes will open in a drop down and then the user can navigate to other pages. There are a few guidelines that we recommend when using [Menu](https://design-system.hpe.design/components/menu#guidance). In our example we are using a few `Menu` props. 
+
+ 1. The `label` prop is what the user sees before they open the dropdown. 
+ 2. Above we have a list of `items` now these items represent the different links so we are passing in `items={items}`
 
 ### HPE Logo
 
 Lucky for us we dont need to do anything special in order to have our Hpe logo at the left side of our `Header` all we do is `import { Hpe } from 'grommet-icons';` Then you can place `<Hpe color="brand" >` in our code.
 
 ## Best Practices 
-You may think we can just go head and stick this code above our `Hello World`. We can and it would work just fine however we want our code to be organized and clean. Lets start by creating a folder in our `src` folder. This folder will be called `components` Within the `components` folder we can create a file that we can name `header.js`. In here we will copy and paste the code from the [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons).
+You may think we can just go ahead and stick this code above our `Hello World`. We can and it would work just fine however we want our code to be organized and clean. Lets start by creating a folder in our `src` folder. This folder will be called `components` Within the `components` folder we can create a file that we can name `header.js`. In here we will copy and paste the code from the [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons).
 
 
 ## Naming convention
