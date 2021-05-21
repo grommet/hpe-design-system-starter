@@ -5,8 +5,10 @@
 At the end of this chapter, you will:
 
 1. Understand the basics of `Box` and how it is used.
-2. Understand the importance of layout specific DOM tags such as `<header>`, `<main>`, and `<footer>`
-3. Understand how to use `Header`, `Main`, and `Footer` components.
+2. Understand the importance of layout specific DOM tags such as `<header>`, `<main>`, `<footer>`, and `<nav>`
+3. Understand how to use `Header`, `Main`, `Nav`, and `Footer` components.
+4. Understand how to leverage `useContext` and `ResponsiveContext` to create responsive layouts
+5. Understand t-shirt sizing and why you should use it instead of custom px values
 6. Have the scaffolding of your app layout built, which will include a Header, Main, and Footer.
 
 ## Fundamentals
@@ -43,12 +45,11 @@ If for whatever reason you are not interested in using the layout-specific compo
 
 Throughout this guide, we will be referencing guidance from WCAG (Web Content Accessibility Guidelines) which is a robust set of accessibility design guidelines for software and web-based products. If you'd like to read more about page regions, you can do so on the [WCAG Page Regions documentation](https://www.w3.org/WAI/tutorials/page-structure/regions/).
 
-## Let’s get started with the application setup!
+## Let’s get started!
 
-1. To start the application, run `yarn start` or `npm start`
+To start the application, run `yarn start` or `npm start`
 
-If you can recall from our last chapter you should have left off with the followinig in your code. 
-
+Right now, your code should look like: 
 
 ```
 const App = () => {
@@ -61,9 +62,20 @@ const App = () => {
 export default App;
 
 ```
-### Let’s explore Header
 
-Now, we can look at our [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons) to grab a header. Later in our tutorial we are going to address routing so having a header with navigation is what we want for this application. When you go to the link you can see the example as well as a __Show Code__ option under the example. In there we have the following:
+### Remember to consider the user's task when selecting a component or pattern
+
+Within the HPE Design System site, there are various examples of how to implement the various components and patterns. As you are building your own application, it's important to **consider what the user is aiming to do** and then choose the combination of components that will best aid that experience.
+
+Often, there may be multiple components or patterns that can "get the job done", but the aim of this guide is to equip you with the knowledge to decide why one component or pattern is better than another for a given use case.
+
+### Let’s add a Header
+
+For our application, the user will need to be able to navigate between various pages. Looking at the documentation for [Header](https://design-system.hpe.design/components/header#header-with-navigation-buttons), you'll see that there are many examples shown. For our use case, the [Header with navigation buttons](https://design-system.hpe.design/components/header#header-with-navigation-buttons) will be most fitting. 
+
+When you go to the above link for "Header with navigation buttons", you will see the example as well as a __Show Code__ option under the example. The intent of these code snippets is to give you a "best practice" reference for a given pattern. In this guide, we'll be copying and pasting various examples as starting points and then modifying them to meet our application's specific needs.
+
+When you expand the "Show Code" section you should see the following:
 
 ```
 import React, { useContext } from 'react';
@@ -119,19 +131,77 @@ export const HeaderNavigationExample = () => {
     </Header>
   );
 };
-
 ```
 
-Before we put this into our code lets talk about a few of these components a little more...
+### Breaking down what's in this Header example
+Before we put this into our code, let's talk about a few of these components a little more...
 
-### Button
-Within this `Header` we have a `Button` that is wrapping the `logo` as well as the `HPE App Name`. This is an option to have this route back to your main page in the application as the application gets more routes and pages within it. 
+### 1. Button
 
-### useContext
-You can see that `useContext` is added in as being imported from [React](https://reactjs.org/docs/hooks-reference.html#usecontext). You will need this in order to use the `ResponsiveContext`. [ResponsiveContext](https://v2.grommet.io/responsivecontext?theme=hpe) is something we will use often. This allows us to get get the current size of the window to determine if we show mobile view or full screen. In the code we are setting a value of `size` in which will determine weather or not we render something different based on the size. 
+`Button` is another fundamental component that is used frequently throughout apps as. In this Header, `Button` serves as an interactive element that will enable navigation. Button is used in two ways in this example:
+* First, we have a `Button` that is wrapping what we refer to as the AppIdentity, which consists of the HPE Element as well as the application name (In this case, "HPE App Name"). This button should route back to the main page of the application. 
+* Second, we use `Button` to create the additional app navigational elements. As of now, they don't route anywhere, but we'll be getting to that in a future chapter. 
 
-### Nav 
-Nav is also made from `Box`. This is just the container that holds the `Button` for the different routes. 
+### 2. Nav 
+Nav, like Header, is another specialized `Box` with some predefined props including an `as="nav"` prop which ensures it appears as `<nav>` in the DOM. The `<nav>` tag indicates to assitive technologies that the elements contained in that region are specific to navigation.
+
+Any time you have a group of navigation related elements, you should wrap them in Nav. In our case, Nav is the container that holds the various Buttons that will later route to different pages. 
+
+### What does "small", "medium", "large" mean for prop values? (t-shirt sizing)
+
+If you haven't already noticed, Grommet uses t-shirt sizing for various prop values. Each t-shirt size corresponds to a specific `px` value that comes from the theme that is applied to the application. For various kinds of styles such as borders, padding, widths, text sizes, and more, t-shirt sizes are defined to help create a more cohesive and consistent visual experience.
+
+When developing with the HPE Design System, you should always use t-shirt sizes. If you find yourself adding custom `px` values to any properties, this should be a warning that you need to consult with your designer about why a custom value is needed. In nearly every case, designs and developement should be using t-shirt sizes.
+
+If you're curious about the exact `px` values of these t-shirt sizes, you can explore [`base.js`](https://github.com/grommet/grommet/blob/master/src/js/themes/base.js) in Grommet. Some of the properties to look would be `edgeSize` (which drives padding and margin values), `borderSize`, and `size` (which drives the width of components such as Box).
+
+For example, in `base.js`, `global.size` contains the following values:
+```
+xxsmall: `${baseSpacing * 2}px`, // 48
+xsmall: `${baseSpacing * 4}px`, // 96
+small: `${baseSpacing * 8}px`, // 192
+medium: `${baseSpacing * 16}px`, // 384
+large: `${baseSpacing * 32}px`, // 768
+xlarge: `${baseSpacing * 48}px`, // 1152
+xxlarge: `${baseSpacing * 64}px`, // 1536
+full: '100%',
+```
+
+`baseSpacing` is a value that is used to set the baseline sizing. In our case, `baseSpacing` is 24. Given this, if you were to implement the following code, you would have a Box with width of "192px" and height of "384px".
+```
+<Box width="small" height="medium" /> 
+// width = 192px, height = 384px
+```
+### 3. React Context, useContext, and ResponsiveContext
+
+Creating experiences that are enjoyable on a range of screen sizes is critical to application development. In order to make this process easier, Grommet has a context called `ResponsiveContext` that provides a way to differ your application's rendering behavior based on the screen resolution.
+
+If you are unfamiliar with contexts, [React Context](https://reactjs.org/docs/context.html) "provides a way to pass data through the component tree without having to pass props down manually at every level." React also provides a hook called [`useContext`](https://reactjs.org/docs/hooks-reference.html#usecontext) that makes it easy to retrieve the current value of a given context.
+
+Grommet's [ResponsiveContext](https://v2.grommet.io/responsivecontext?theme=hpe) is a context that tracks the current size of the user's window. The various screen breakpoints come from `base.js` under [`global.breakpoints`](https://github.com/grommet/grommet/blob/master/src/js/themes/base.js#L164).
+
+The corresponding pixel values are as follows. For example, a screen would be considered "small" anytime the window is less than or equal to 768px wide:
+```
+small (mobile): 0-768px
+medium (tablet): 769px-1536px
+large (desktop): > 1536px
+```
+
+In development, we frequently want to track when the screen size is "small" or not because this would indicate a shift to mobile screen size, which likely will require layout changes. We often use `size` to determine if an element should appear on the screen or not or if the element's properties should be altered based on the screen size.
+
+In the case of the Header example shared above, you'll see:
+```
+{size !== 'small' ? (
+    <Nav direction="row">
+        {items.map(item => (
+            <Button label={item.label} key={item.label} />
+        ))}
+    </Nav>
+ ) : (
+     <Menu label="Menu" items={items} />
+)}
+```
+This says, "If the screen size is not small, render the entire Nav. Otherwise, if the screen size is small, just render the Menu."
 
 ### Menu 
 We are using `Menu` in order to have a drop that will contain the `Button` routes when in mobile view. 
@@ -189,7 +259,7 @@ The application should still be running on `http://localhost:3000/` and your app
 
 ![Chapter-02-first-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-first-screen.png)
 
-Definity not the prettiest screen but dont worry we are making great progress! :smiley:
+Definitely not the prettiest screen yet, but don't worry we are making great progress! :smiley:
 
 ## Footer
 
