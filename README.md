@@ -51,4 +51,4 @@ I would recomment that you are familar with the basics of these 3 to get started
 
 ### JavaScript 
 
-JavaScript is the programming language that will add interactivity to your elements on your website. There is a ton of tutorials online that will go further in detail about the fundamentals with JavaScript. I would also recommend looking into the ES8 version.
+JavaScript is the programming language that will add interactivity to your elements on your website. There is a ton of tutorials online that will go further in detail about the fundamentals with JavaScript. I would also recommend looking into the [ES6 features](https://www.w3schools.com/js/js_es6.asp). 
