@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Pre-Chapter: We can think of this as a sanity check to make sure we have everything we need in order to be successful with going through this application. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+At the end of this pre-chapter, you will:
 
-## Available Scripts
+1. System setup, we will go through everything you will need to start using HPE Design System
+2. Basic understanding of HTML and CSS.
+3. JavaScript fundamentals (including ES6 features)
 
-In the project directory, you can run:
 
-### `yarn start`
+### System Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before starting with any of the code we need to be sure that you have the correct system setup. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Node.JS 
+The first thing we will need to be installed on your local machine would be [Node.js](https://nodejs.org/en/about/). What Node does is it takes all of our JavaScript code and coverts to a faster machine code, in which the computer can run on. 
 
-### `yarn test`
+If you do not have Node.js installed you can simply go to their [website](https://nodejs.org/en/) and install the correct verison based on your operating system. Now with Node there is NPM in which comes bundled with the download. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+####  NPM (Node Package Manager) ?
+[NPM](https://docs.npmjs.com/about-npm) is a package manager for Node platform. 
+- You can use NPM to add packages of code for your application. 
+- Manage multiple versions of code and their dependencies.
+- Update applications easily when there are updates on code. 
 
-### `yarn build`
+#### Yarn
+Yarn is another package manager that can be used with Node. Installing Yarn is a little different in that it is not already bundeled with Node. However, its pretty simple you can look at [docs](https://classic.yarnpkg.com/en/docs/install/#mac-stable) to download. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### NPM vs Yarn
+There is a few blogs on the differences between [NPM and Yarn](https://www.whitesourcesoftware.com/free-developer-tools/blog/npm-vs-yarn-which-should-you-choose/). They both have their advantages but I would recommend going through some [blogs](https://waverleysoftware.com/blog/yarn-vs-npm/) or docs to decide what is right for you.
+NPM was the first to be introduced, however Yarn has gained popularity with the performance. Ultimately, it is your choice between npm vs yarn. Both of these package managers will do just fine for what we are trying to achieve. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Code Editor
 
-### `yarn eject`
+Now that we have our package managers all set up we can move on to installing a code editor if you do not already have one. Our recommendation here is to use __Visual Studio Code__. You can find the [download](https://code.visualstudio.com/) here. Not only do you get a code editor but also there are many plugins avalible as well as 
+an integrated terminal. Now there are plenty of other code editors that will work just fine this is just our recommendation. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### HTML & CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Now that we have decided on a project manager as well as code editor we can move on to some code! 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I would recommend going through some basic knowledge of HTML and CSS. 
 
-## Learn More
+* HTML is what provides the basic structure of sites. 
+* CSS is used to control how the website should appear on the front end of the page. 
+* JavaScript is used to motify the content  of websites too behave a certain way. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I would recomment that you are familar with the basics of these 3 to get started with  React, this will make your life easier. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### JavaScript 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+JavaScript is the programming language that will add interactivity to your elements on your website. There is a ton of tutorials online that will go further in detail about the fundamentals with JavaScript. I would also recommend looking into the ES8 version.
