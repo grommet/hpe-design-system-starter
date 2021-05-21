@@ -22,7 +22,7 @@ Nodejs is used for hosting as well as running a web server for a React applicati
 
 ### Package Manager (NPM or Yarn?)
 
-There are two main package managers that can be used. These are to easily instal and update other third-party packages. 
+A package manager is a software tool that automates the process of installing, upgrading, configuring, and removing packages that are used within your application. There are two main package managers that can be used: `yarn` and `npm`.
 You can use npm or [yarn](https://classic.yarnpkg.com/en/docs/getting-started) as your package manager. The HPE Design System uses `yarn`, but both will work.
 
 ### What is React ?
