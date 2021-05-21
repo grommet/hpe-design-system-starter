@@ -138,7 +138,7 @@ Before we put this into our code, let's talk about a few of these components a l
 
 ### 1. Button
 
-`Button` is another fundamental component that is used frequently throughout apps as. In this Header, `Button` serves as an interactive element that will enable navigation. Button is used in two ways in this example:
+`Button` is another fundamental component that is used frequently throughout apps. In this Header, `Button` serves as an interactive element that will enable navigation. Button is used in two ways in this example:
 * First, we have a `Button` that is wrapping what we refer to as the AppIdentity, which consists of the HPE Element as well as the application name (In this case, "HPE App Name"). This button should route back to the main page of the application. 
 * Second, we use `Button` to create the additional app navigational elements. As of now, they don't route anywhere, but we'll be getting to that in a future chapter. 
 
