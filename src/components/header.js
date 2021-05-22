@@ -16,10 +16,10 @@ const items = [
   { label: "Label 3" },
 ];
 
-export const HeaderNavigation = () => {
+const AppHeader = () => {
   const size = useContext(ResponsiveContext);
   return (
-    <Header pad={{horizontal: "medium", vertical: 'small'}} fill="horizontal">
+    <Header pad={{ horizontal: "medium", vertical: "small" }} fill="horizontal">
       <Button>
         <Box
           direction="row"
@@ -51,3 +51,5 @@ export const HeaderNavigation = () => {
     </Header>
   );
 };
+
+export { AppHeader as Header };

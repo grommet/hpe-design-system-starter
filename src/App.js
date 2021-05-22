@@ -1,23 +1,21 @@
 import React from "react";
 import { Grommet, Box, Main } from "grommet";
 import { hpe } from "grommet-theme-hpe";
-import { HeaderNavigation } from "./components/header";
-import { FooterExample } from "./components/footer";
+import { Header, Footer } from "./components";
 
 const App = () => {
   return (
     <Grommet theme={hpe} style={{ minHeight: "100%", width: "auto" }} full>
       <Box fill>
-        <HeaderNavigation />
+        <Header />
         <Main
           pad={{ horizontal: "medium", vertical: "small" }}
           flex
           fill={false}
         >
-          {" "}
           Hello, World!
         </Main>
-        <FooterExample />
+        <Footer />
       </Box>
     </Grommet>
   );
