@@ -5,7 +5,7 @@ We recommend you follow the guide from start to finish, but you can also jump to
 ## Objectives
 By the end of this tutorial, you should feel confident about:
 1. Building an enterprise-level, HPE application with Grommet
-2. Incorporating accessibility-specific porperties to components
+2. Incorporating accessibility-specific properties to components
 3. Making decisions regarding when to use one component versus another
 4. Creating responsive layouts that are pleasing to use on both desktop and mobile
 5. Understanding the ins and outs of using the Design System
