@@ -8,12 +8,17 @@ At the end of this chapter, you will:
 2. Have installed the necessary HPE Design System dependencies
 3. Have a “Hello World” application that we build-out into a richer application in subsequent chapters
 
+At the end of this chapter, your application will look like this:
+
+![Chapter-01-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-01/public/Chapter-01-first-screen.png)
+
 ## Fundamentals
 
-React, Grommet, grommet-theme-hpe, and an undestanding of their respective roles in the HPE Design System ecosystem are fundamental to confidently and successfully building this starter application. Below, we’ll cover what each of these is and how they all work together to create the HPE Design System development experience.
+Grommet, grommet-theme-hpe, and an understanding of their respective roles in the HPE Design System ecosystem are fundamental to confidently and successfully building this starter application. Below, we’ll cover what each of these is and how they all work together to create the HPE Design System development experience.
 
 ### Styled-Components 
-Grommet which we will cover in the section below, was built using React and Styled-Components. [Styled-Components](https://styled-components.com/) is a CSS in JavaScript library. Using Styled-Components allows you to skip the classNames you would normally use when adding CSS. Every style is applied  to a certain component which keeps things alot cleaner. You wont need to know how to use Styled-Components to use Grommet, however it is good to know what Grommet is built with!
+
+Grommet which we will cover in the section below, was built using React and Styled-Components. [Styled-Components](https://styled-components.com/) is a CSS in JavaScript library. Using Styled-Components allows you to skip the classNames you would normally use when adding CSS. Every style is applied to a certain component which keeps things a lot cleaner. You won't need to be implementing your own Styled Components very often, but it is good to know what Grommet is built with!
 
 
 ### What is Grommet ?
