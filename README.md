@@ -11,6 +11,10 @@ At the end of this chapter, you will:
 5. Understand t-shirt sizing and why you should use it instead of custom px values
 6. Have the scaffolding of your app layout built, which will include a Header, Main, and Footer.
 
+Your application will look like this at the end of this chapter:
+
+![Chapter-02-Second-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-second-screen.png)
+
 ## Fundamentals
 
 Before we get into the specific layout components, we will start with understanding one of Grommet's most fundamental components: `Box`.
@@ -236,40 +240,53 @@ When you're using icons in your application, you should be able to find them in 
 For our case, we need the `Hpe` icon. All we do is `import { Hpe } from 'grommet-icons';`. Then you can place `<Hpe color="brand" >` in our code.
 
 ## Best Practices 
-You may think we can just go ahead and stick this code above our `Hello World`. We can and it would work just fine however we want our code to be organized and clean. Lets start by creating a folder in our `src` folder. This folder will be called `components` Within the `components` folder we can create a file that we can name `header.js`. In here we will copy and paste the code from the [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons).
+While it's tempting to just copy and paste this code above our `Hello World`, let's talk about how to organize our code into separate files that will make it more readable and easy to maintain as our app grows.
 
+Lets start by creating a folder in our `src` folder called `components`. Within the `components` folder, create a file called `Header.js`. This is where we will copy and paste the code from the [Design-System](https://design-system.hpe.design/components/header#header-with-navigation-buttons).
 
-## Naming convention
+We will also create an `index.js` file inside of `components` where we will export everything from any file in that folder. This will make importing the components into other files easier. For now, we will add:
 
-In our case `HeaderNavigationExample` does not make sense for our  application so let go ahead and rename this. If we make our way to our `header.js` file then we can edit out the name of the file. To keep our imports simple lets go a head and change the name from `HeaderNavigationExample` to `HeaderNavigation`
+```diff
++ export * from './Header';
+```
 
-+ `export const HeaderNavigation = () => {`
+## Component naming conventions
 
-## Importing Header
-Now that we have a better naming convention we can import this into our `App.js` file.
+In the case of this application, `HeaderNavigationExample` is not the most concise, so let's go ahead and rename this to `AppHeader` and rename the export at the bottom of the file. We do this renamed export to avoid conflicts with Grommet's existing Header component. Notice if you try to set your code to `const Header = () => {` you will get a linting error.
+
+```diff
++ const AppHeader = () => {
+... existing code
+}
+
++ export { AppHeader as Header };
+```
+
+## Importing Header into App.js
+
+With our file structure setup with clear naming conventions, we're ready to import `Header` into our `App.js` file.
  
 Your imports should look like the following:
 
-```
+```diff
 import React from "react";
 import { Grommet } from "grommet";
 import { hpe } from "grommet-theme-hpe";
-+ import { HeaderNavigation } from './components/header'
-
++ import { Header } from './components';
 ```
 
-Now we can place `HeaderNavigation` right above our `Hello World!` 
+Now we can place `Header` above our `Hello World!`:
 
-```
+```diff
 import React from "react";
 import { Grommet } from "grommet";
 import { hpe } from "grommet-theme-hpe";
-import {HeaderNavigation} from './components/header'
+import { Header } from './components';
 
 const App = () => {
   return (
     <Grommet theme={hpe} style={{ height: "100%", width: "auto" }} full>
-    +  <HeaderNavigation />
++     <Header />
       Hello, World!
     </Grommet>
   );
@@ -278,20 +295,15 @@ export default App;
 
 ```
 
-The file should now look like the above code in `App.js` 
-
-The application should still be running on `http://localhost:3000/` and your app should looking something like:
+The application should still be running on `http://localhost:3000/`, and your app should looking something like:
 
 ![Chapter-02-first-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-first-screen.png)
 
 Definitely not the prettiest screen yet, but don't worry we are making great progress! :smiley:
 
-## Footer
+## Adding in a Footer
 
-### Lets use the similar steps to add in our footer
-If we go back to our [Design-System](https://design-system.hpe.design/components/footer) again we will grab a footer from the examples given. In this case we will grab the first example and open up the __Show Code__ to be able to copy the code given. 
-
-Below is the code given for the simple example:
+Let's take a similar approach to add in a Footer. If we go to the [Design System Footer documentation](https://design-system.hpe.design/components/footer), we will grab a footer from the examples given. In this case we will grab the first example by opening up the __Show Code__ and copying the code provided which should look like this: 
 
 ```
 import React, { useContext } from 'react';
@@ -307,6 +319,7 @@ export const FooterExample = () => {
     { label: 'Security' },
     { label: 'Feedback' },
   ];
+  
   return (
     <Footer
       background="background-front"
@@ -338,69 +351,77 @@ export const FooterExample = () => {
 
 ```
 
-### Lets stop and understand the code
-The footer is very similar to the `Header` in the way that they both use `size` to determine how things are rendered on different screen sizes.
+Notice the way `ResponsiveContext` is used to adjust some of the Footer styling depending on if the user is on mobile or not.
 
-### Making a new file
-Just like how we created a new file in our `components` folder we will add a `footer.js` in there as well and paste the code into the new file.
+### Creating a Footer.js file
+In our `components` folder, add a `Footer.js` and paste the code into this new file. Similar to Header, we will make a few small adjustments:
 
-### Import footer in main app
-For this example `FooterExample` is fine to keep for the name. We now can add this import under the `HeaderNavigation` 
+Footer.js
+```diff
++ const AppFooter = () => {
+  ...exisiting code
+};
 
++ export { AppFooter as Footer };
 ```
+
+index.js
+```diff
++ export * from './Footer';
+export * from './Header';
+```
+For readbility, we keep the exports alphabetized.
+
+### Importing Footer into App.js
+In `App.js`, we now can add this import:
+
+```diff
 import React from "react";
 import { Grommet } from "grommet";
 import { hpe } from "grommet-theme-hpe";
-import { HeaderNavigation } from "./components/header";
-+ import { FooterExample } from "./components/footer";
-
++ import { Footer, Header } from "./components";
 ```
 
-Once we have this import we can use this within our code. We will add this under our `Hello World` Our App.js should match the following:
+Once we have this import, we can use the component within our code. We will add the footer under our `Hello World`:
 
-```
-import React from "react";
-import { Grommet } from "grommet";
-import { hpe } from "grommet-theme-hpe";
-import { HeaderNavigation } from "./components/header";
-+ import { FooterExample } from "./components/footer";
-
+```diff
 const App = () => {
   return (
     <Grommet theme={hpe} style={{ height: "100%", width: "auto" }} full>
-      <HeaderNavigation />
+      <Header />
       Hello, World!
-    +  <FooterExample />
++     <Footer />
     </Grommet>
   );
 };
+
 export default App;
 
 ```
 
-## Adding Main 
+## Placing page content inside Main 
 
-For now we can use the `Main` wrapper from grommet. We will use this to wrap around the `Hello World!`
+The page content that is not contained within Header or Footer should be wrapped in `Main`. In our case, we need to wrap `Hello World!` in `Main`.
 
-We need to import this from grommet. So this will come after grommet. 
+First, let's import it from Grommet:
 
-`import { Grommet, Main } from "grommet";`
-
-This main component will also have to match the pad of the `Header` and `Footer` so you will place the following after `HeaderNavigation` and before `FooterExample` 
-
+```diff
++ import { Grommet, Main } from "grommet";
 ```
-<Main
-    pad={{ horizontal: "medium", vertical: "small" }}
-    flex
-    fill={false}
->
-    {" "}
+
+Then, let's wrap our content in it. The additional props on Main ensure that the application fills the available window height even when the content is minimal:
+
+```diff
++ <Main
++   pad={{ horizontal: "medium", vertical: "small" }}
++   flex
++   fill={false}
++ >
     Hello, World!
-</Main>
-
++ </Main>
 ```
 
-Lets do a quick sanity check and look at our application you should have something like this.
+Let's do a quick sanity check and look at our application. You should have something like this:
 
 ![Chapter-02-Second-Screen](https://github.com/grommet/hpe-design-system-starter/blob/chapter-02/public/Chapter-02-second-screen.png)
 
