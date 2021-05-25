@@ -21,5 +21,8 @@ However, if you’d like to start completely from scratch, you can run:
 $ npx create-react-app hpe-design-system-starter
 ```
 ## Table of Contents
+Just getting started with development? Check out this primer: [Understanding the fundamentals: Node, package management, code editors, and more](https://github.com/grommet/hpe-design-system-starter/tree/chapter-00)
+
+If you're already comfortable with HTML, CSS, Javascript, and React go ahead and start from here:
 1.  [Setup your application with Grommet and grommet-theme-hpe](https://github.com/grommet/hpe-design-system-starter/tree/chapter-01)
 2.  [Setup a Header, Main and Footer!](https://github.com/grommet/hpe-design-system-starter/tree/chapter-02)
