@@ -16,7 +16,7 @@ Before starting with any development work, let's make sure your local environmen
 
 ### Node.js 
 
-First, you will need to install [Node.js](https://nodejs.org/en/download/) on your local machine. What Node.js does is it takes all of our JavaScript code and coverts to a faster machine code, in which the computer can run on. 
+First, you will need to install [Node.js](https://nodejs.org/en/download/) on your local machine. Node.js takes JavaScript code and coverts to faster machine code that the computer can run on. 
 
 ### Choosing a package manager
 
