@@ -1,4 +1,4 @@
-# Chapter Two: Setup a Header, Main and Footer in our application!
+# Chapter Two: Setup a Header, Main and Footer in our application! (11 min read)
 
 ## Objective
 
