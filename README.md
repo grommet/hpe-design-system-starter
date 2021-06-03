@@ -1,5 +1,4 @@
-# Understanding the fundamentals: Node, package management, code editors, and more
-
+# Understanding the fundamentals: Node, package management, code editors, and more (4 min read)
 
 ## Objective
 At the end of this chapter, you will:
