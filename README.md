@@ -25,4 +25,4 @@ Just getting started with development? Check out this primer: [Understanding the
 
 If you're already comfortable with HTML, CSS, Javascript, and React go ahead and start from here:
 1.  [Setup your application with Grommet and grommet-theme-hpe (5 min read)](https://github.com/grommet/hpe-design-system-starter/tree/chapter-01)
-2.  [Setup a Header, Main and Footer! (10 min read)](https://github.com/grommet/hpe-design-system-starter/tree/chapter-02)
+2.  [Setup a Header, Main and Footer! (11 min read)](https://github.com/grommet/hpe-design-system-starter/tree/chapter-02)
