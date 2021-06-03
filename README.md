@@ -1,4 +1,4 @@
-# Chapter One: Setup your application with Grommet and grommet-theme-hpe
+# Chapter One: Setup your application with Grommet and grommet-theme-hpe (5 min read)
 
 ## Objective
 
